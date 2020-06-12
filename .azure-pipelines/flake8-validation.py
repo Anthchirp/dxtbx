@@ -3,10 +3,7 @@ import subprocess
 
 # Flake8 validation
 known_bad = {
-#    "algorithms/rs_mapper/__init__.py": {"F401", "F403"},
-#    "algorithms/shoebox/__init__.py": {"F401", "F403"},
-#    "nexus/__init__.py": {"F401", "F403"},
-#    "test/command_line/test_generate_distortion_maps.py": {"F841"},
+    "filecache_controller.py": {"E722"},
 }
 failures = 0
 try:
