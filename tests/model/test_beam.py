@@ -3,8 +3,8 @@ from __future__ import absolute_import, division, print_function
 from builtins import range
 
 import pytest
+from freephil import parse
 
-from libtbx.phil import parse
 from scitbx import matrix
 
 from dxtbx.model import Beam

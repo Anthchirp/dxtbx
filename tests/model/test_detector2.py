@@ -5,8 +5,8 @@ from math import sqrt
 
 import pytest
 import six.moves.cPickle as pickle
+from freephil import parse
 
-from libtbx.phil import parse
 from scitbx import matrix
 
 from dxtbx.model import Beam, Detector

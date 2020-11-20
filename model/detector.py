@@ -3,9 +3,9 @@ from __future__ import absolute_import, division, print_function
 import os
 from builtins import object, range
 
+import freephil
 import pycbf
 
-import libtbx.phil
 from cctbx.eltbx import attenuation_coefficient
 from scitbx import matrix
 
@@ -31,7 +31,7 @@ from dxtbx_model_ext import (
 
 dxtbx_overload_scale = float(os.getenv("DXTBX_OVERLOAD_SCALE", "1"))
 
-detector_phil_scope = libtbx.phil.parse(
+detector_phil_scope = freephil.parse(
     """
   detector
     .expert_level = 1

@@ -3,9 +3,9 @@ from __future__ import absolute_import, division, print_function
 import math
 from builtins import object, range
 
+import freephil
 import pycbf
 
-import libtbx.phil
 from scitbx.array_family import flex
 
 from dxtbx_model_ext import Goniometer, KappaGoniometer, MultiAxisGoniometer
@@ -18,7 +18,7 @@ __all__ = [
     "goniometer_phil_scope",
 ]
 
-goniometer_phil_scope = libtbx.phil.parse(
+goniometer_phil_scope = freephil.parse(
     """
   goniometer
     .expert_level = 1

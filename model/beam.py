@@ -3,13 +3,12 @@ from __future__ import absolute_import, division, print_function
 import math
 from builtins import object, range
 
+import freephil
 import pycbf
-
-import libtbx.phil
 
 from dxtbx_model_ext import Beam
 
-beam_phil_scope = libtbx.phil.parse(
+beam_phil_scope = freephil.parse(
     """
   beam
     .expert_level = 1

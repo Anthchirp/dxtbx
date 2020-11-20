@@ -6,10 +6,10 @@ from builtins import range
 
 import numpy as np
 import psana
+from freephil import parse
 
 from cctbx import factor_kev_angstrom
 from cctbx.eltbx import attenuation_coefficient
-from libtbx.phil import parse
 from scitbx.array_family import flex
 from scitbx.matrix import col
 

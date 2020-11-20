@@ -3,15 +3,15 @@ from __future__ import absolute_import, division, print_function
 import os
 from builtins import object, range
 
+import freephil
 import pycbf
 
-import libtbx.phil
 from scitbx.array_family import flex
 
 from dxtbx.model.scan_helpers import scan_helper_image_files, scan_helper_image_formats
 from dxtbx_model_ext import Scan
 
-scan_phil_scope = libtbx.phil.parse(
+scan_phil_scope = freephil.parse(
     """
   scan
     .expert_level = 1

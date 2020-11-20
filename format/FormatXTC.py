@@ -3,7 +3,7 @@ from __future__ import absolute_import, division, print_function
 import functools
 import sys
 
-from libtbx.phil import parse
+from freephil import parse
 
 from dxtbx import IncorrectFormatError
 from dxtbx.format.Format import Format

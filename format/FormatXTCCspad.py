@@ -4,9 +4,9 @@ import sys
 from builtins import range
 
 import numpy as np
+from freephil import parse
 
 from cctbx.eltbx import attenuation_coefficient
-from libtbx.phil import parse
 from scitbx.array_family import flex
 from scitbx.matrix import col
 from xfel.cftbx.detector.cspad_cbf_tbx import read_slac_metrology

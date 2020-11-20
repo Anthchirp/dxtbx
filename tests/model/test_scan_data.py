@@ -4,8 +4,7 @@ import copy
 from builtins import range
 
 import pytest
-
-from libtbx.phil import parse
+from freephil import parse
 
 from dxtbx.model import Scan
 from dxtbx.model.scan import ScanFactory, scan_phil_scope

@@ -4,7 +4,8 @@ import math
 import sys
 from builtins import range
 
-from libtbx.phil import parse
+from freephil import parse
+
 from libtbx.test_utils import approx_equal
 from scitbx.array_family import flex
 from scitbx.math.superpose import least_squares_fit

@@ -6,11 +6,11 @@ import sys
 
 import matplotlib.pyplot as plt
 import numpy as np
+from freephil import parse
 from matplotlib.backends.backend_pdf import PdfPages
 from matplotlib.patches import FancyArrowPatch
 from mpl_toolkits.mplot3d import proj3d
 
-from libtbx.phil import parse
 from libtbx.utils import Sorry
 from scitbx.matrix import col
 

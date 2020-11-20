@@ -4,9 +4,9 @@ import sys
 from builtins import range
 
 import numpy as np
+from freephil import parse
 
 from cctbx import factor_kev_angstrom
-from libtbx.phil import parse
 from scitbx.array_family import flex
 from scitbx.matrix import col
 

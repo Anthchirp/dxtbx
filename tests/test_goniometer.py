@@ -5,10 +5,10 @@ import os
 from builtins import range
 
 import pytest
+from freephil import parse
 
 import libtbx.load_env
 from libtbx import easy_pickle
-from libtbx.phil import parse
 from libtbx.test_utils import Exception_expected, approx_equal
 from scitbx import matrix
 from scitbx.array_family import flex

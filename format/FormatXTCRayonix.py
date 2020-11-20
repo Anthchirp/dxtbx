@@ -3,8 +3,8 @@ from __future__ import absolute_import, division, print_function
 import sys
 
 import psana
+from freephil import parse
 
-from libtbx.phil import parse
 from scitbx.array_family import flex
 
 from dxtbx.format.FormatXTC import FormatXTC, locator_str
