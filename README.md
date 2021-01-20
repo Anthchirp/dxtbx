@@ -1,3 +1,39 @@
+## DX2 project
+
+### Discussion
+
+Features of dxtbx we want to preserve in a re-write:
+- Most of the models (beam, detector, crystal, gonio, scan)
+- The registry
+- In-memory representation of data (like what we get from MemImageSet). Supports streaming.
+
+Things that should go away
+- Imageset/imagesweep
+- Lazy will be unnecessary because models are random access and read on demand
+- Datablocks
+- Detectorbase
+- `check_format` (implicit in random access/read on demand)
+
+New features that are desired
+- Retain more details of the goniometer stack
+- Proper definition of scan
+- ImageSetData, Reader
+- numpy back end as option?
+    - would likely enable pybind11
+- Match the crystal B matrix convention to IUCr convention.
+- `get_image_size` is fast/slow but get raw data is slow/fast
+- Count everything from zero
+- Array dimensions are in C order
+- Remove magic from option parser
+- Assume filenames are "sensible" i.e. `.nxs` are nexus files, etc.
+- Assume `.expt` is experiments, `.refl` is reflections
+- Formats have list of supported filename extensions :thinking_face:
+- Define 'half object' conventions (pixel coordinates, U matrix rotations)
+- Fast deserialization
+
+Conclusion of discussion: consensus was to take this forward to a project proposal to active collaborators, with an explicit rename such that dxtbx continues along it's existing path for non-DIALS users.
+
+
 ## Diffraction Experiment Toolbox
 
 ![Python 3.6 | 3.7 | 3.8](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8-blue.svg)
